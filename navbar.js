@@ -11,7 +11,7 @@
                 navHtml += '</ul>'.repeat(level - itemLevel);
             }
             level = itemLevel;
-            navHtml += `<li><a href="${item.href}">${item.text}</a></li>`;
+            navHtml += `<li class="table_of_contents-indent-${item.level}"><a href="${item.href}">${item.text}</a></li>`;
         });
 
         navHtml += '</ul>'.repeat(level);
